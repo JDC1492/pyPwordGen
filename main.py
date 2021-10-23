@@ -15,6 +15,9 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-print(type(nr_letters))
-print(type(nr_numbers))
-print(type(nr_symbols))
+lets = random.sample(letters, nr_letters)
+symbs = random.sample(symbols, nr_symbols)
+numbs = random.sample(numbers, nr_numbers)
+
+ez_password = lets + symbs + numbs
+print(str(ez_password))
