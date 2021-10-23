@@ -19,5 +19,12 @@ lets = random.sample(letters, nr_letters)
 symbs = random.sample(symbols, nr_symbols)
 numbs = random.sample(numbers, nr_numbers)
 
+passwrd = " "
+
 ez_password = lets + symbs + numbs
-print(str(ez_password))
+random.shuffle(ez_password)
+
+for each in ez_password:
+  passwrd += each
+
+print(passwrd)
